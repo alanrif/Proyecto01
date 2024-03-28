@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ejemplo de formulario </h1>
+    <form action="#" method="post">
+        <label for="nombre">nombre </label>
+        <input type="text" name="nombre" placeholder="nombre apellido" id="nombre">
+        <br>
+        <label for="pass">Contraseña</label>
+        <input type="password" name="pass" id="pass">
+        <br>
+        <label for="edad">edad</label>
+        <input type="number" min="0" step="5" name="edad" id="edad">
+        <br>
+        <label for="fnacimiento"></label>
+        <input type="date" name="fnacimiento" id="fnacimiento">
+        <br>
+        <select required="pais" id="pais">
+            <option value="">[seleccione pais]</option>
+            <option value="1">chile</option>
+            <option value="2">peru</option>
+            <option value="3">colombia</option>
+            <option value="4">españa</option>
+            <option value="5">portugal</option>
+            <option value="6">italia</option>
+        <select/>
+        <select name="pais" id="pais">
+            <optgroup>
+                <option value="">chile</option>
+                <option value="">peru</option>
+                <option value="">colombia</option>
+            </optgroup>
+            <optgroup> <label for="europa"></label>
+                <option value="">españa</option>
+                <option value="">portugal</option>
+                <option value="">italia</option>
+            </optgroup>
+        </select>
+        <br>
+        <input type="submit" value="enviar">
+    </form>
+    <a href="index.html">volver</a>
+</body>
+</html>
